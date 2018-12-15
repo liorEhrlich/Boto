@@ -15,8 +15,7 @@ words ={'itc_staff': ["lotem", "aviram", "yoav", "ariel", "yiftach", "gilad"],
         'swear_words': ["fuck","shit","asshole","butthole","damn","bitch","darn","crap","piss"],
         'song': ["all in it Gettin jiggy wit it Na na na na na na na nana Na na na na nana Gettin jiggy wit it Na na na na na na na nana Na na na na nana What you want to ball with the ki "],
         'song_words': ["song?", "song", "sing"],
-        'math': ["+","-","=","*"],
-        'weather': ["sunny","rainy","sun","rain", "cloud", "weather"]
+        'math': ["+","-","=","*"]
 }
 
 def tell_joke():
