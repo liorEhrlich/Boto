@@ -15,7 +15,8 @@ words ={'itc_staff': ["lotem", "aviram", "yoav", "ariel", "yiftach", "gilad"],
         'swear_words': ["fuck","shit","asshole","butthole","damn","bitch","darn","crap","piss"],
         'song': ["all in it Gettin jiggy wit it Na na na na na na na nana Na na na na nana Gettin jiggy wit it Na na na na na na na nana Na na na na nana What you want to ball with the ki "],
         'song_words': ["song?", "song", "sing"],
-        'math': ["+","-","=","*"]
+        'math': ["+","-","=","*"],
+        'food':["pizza","burger","pasta","salad"]
 }
 
 def tell_joke():
@@ -27,9 +28,14 @@ def lets_ask(input):
     input_list = input.split()
     if 'joke' in input:
         return tell_joke()
+    if 'travel' in input:
+        return ["inlove","I would LOVE to go to france"]
     for word in words["song_words"]:
         if word in input_list:
             return ["dancing" ,words["song"]]
+    for word in words["food"]:
+        if word in input:
+            return ["giggling" ,"I like {0} too!".format(input)]
     for word in words["math"]:
         if word in input_list:
             return ["no" ,"I am a robot, not a calculator!"]
